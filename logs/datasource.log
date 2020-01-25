@@ -1,0 +1,4 @@
+Jan 26, 2020 12:22:12 AM com.jan.bean.DataStore createFile
+INFO: DataStore is created in the directory resources\default.properties
+Jan 26, 2020 12:22:12 AM com.jan.core.DsApplication main
+SEVERE: msg
