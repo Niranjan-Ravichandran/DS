@@ -67,7 +67,7 @@ public class Util {
 				throw new DataStoreException(ErrorMessage.getErrorMessage("E106"));
 			}
 		} catch (Exception e) {
-			// System.out.println(e.getMessage());
+			 System.out.println(e.getMessage());
 			LoggerUtility.getInstance().log(Level.SEVERE, "Error", e);
 			throw new DataStoreException(ErrorMessage.getErrorMessage("E108"));
 

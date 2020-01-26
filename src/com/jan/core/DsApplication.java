@@ -60,7 +60,7 @@ public class DsApplication {
 		dataStore.create("key2", json2);
 	}
 	static void read(DataStore dataStore) throws DataStoreException {
-		JSONObject jsonObject=dataStore.read("key6");
+		JSONObject jsonObject=dataStore.read("key4");
 		System.out.println(jsonObject);
 	}
 	static void delete(DataStore dataStore) throws DataStoreException {
@@ -69,9 +69,9 @@ public class DsApplication {
 public static void main(String[] args) throws DataStoreException, ParseException {
 	try {
 	DataStore  dataStore=new DataStore();
-	//create(dataStore);
-	//read(dataStore);
-	//delete(dataStore);
+	create(dataStore);
+	read(dataStore);
+	delete(dataStore);
 	LoggerUtility.getInstance().log(Level.SEVERE, "msg");
 	
 	}catch(Exception e) {

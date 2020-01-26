@@ -41,7 +41,7 @@ public class DsService {
 			Properties js=Util.readDataStore(filePath);
 			String jsonValue=(String)js.getProperty(key);
 			if(null==jsonValue) {
-				throw new DataStoreException(ErrorMessage.getErrorMessage("E112").replace("{{1}}", key));
+				throw new DataStoreException(ErrorMessage.getErrorMessage("E106").replace("{{1}}", key));
 			}
 			json=(JSONObject)new JSONParser().parse(jsonValue);
 		}
